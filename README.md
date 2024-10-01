@@ -14,4 +14,4 @@ Flow Details:
  - Events are published to an SNS topic
  - An SQS queue subscribes to the SNS topic and receives the published events
  - The SQS queue triggers a Lambda function upon receiving events
- - The Lambda function processes the events and stores them in S3
+ - The Lambda function processes the events and stores them in S3 bucket
