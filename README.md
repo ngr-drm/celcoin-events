@@ -6,7 +6,7 @@ Technical studies and experiments
 
 <h4>Further information</h4>
 
-_A proof of concept aimed at validating an banking event ingestion service in a data lake._
+_A proof of concept aimed at validating a banking events ingestion service into an AWS cloud data lake._
 
 Main Technologies: Spring Boot AWS (SNS SQS Lambda S3)
 
