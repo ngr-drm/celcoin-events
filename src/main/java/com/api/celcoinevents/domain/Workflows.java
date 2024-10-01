@@ -16,7 +16,7 @@ public class Workflows {
 
     @PostMapping
     public ResponseEntity<Void> sendEventToTheLake() throws EnterpriseException{
-        String message = "hello world";
+        String message = "banking-event";
         sendEventToTheLake.execute(message);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
