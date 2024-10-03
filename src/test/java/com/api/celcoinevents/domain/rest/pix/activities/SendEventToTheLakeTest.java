@@ -1,4 +1,4 @@
-package com.api.celcoinevents.domain.activities;
+package com.api.celcoinevents.domain.rest.pix.activities;
 
 import com.api.celcoinevents.domain.rest.pix.activities.SendEventToTheLake;
 import com.api.celcoinevents.domain.rest.pix.handlers.EnterpriseException;
@@ -46,7 +46,7 @@ class SendEventToTheLakeTest {
         });
 
         assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, exception.getStatusCode());
-        assertEquals("message could not be published", exception.getMessage());
+        assertEquals("message could not be published", exception.getReason());
 
         verify(celcoinEventsTopic, times(1)).publish(event);
     }
