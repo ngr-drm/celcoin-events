@@ -1,4 +1,4 @@
-package com.api.celcoinevents.domain;
+package com.api.celcoinevents.domain.rest.pix.handlers;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;

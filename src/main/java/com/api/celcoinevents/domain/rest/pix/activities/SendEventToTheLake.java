@@ -1,8 +1,8 @@
-package com.api.celcoinevents.domain.activities;
+package com.api.celcoinevents.domain.rest.pix.activities;
 
 import com.api.celcoinevents.commands.Command;
 import com.api.celcoinevents.commands.SendMessageToSnsTopic;
-import com.api.celcoinevents.domain.EnterpriseException;
+import com.api.celcoinevents.domain.rest.pix.handlers.EnterpriseException;
 import com.api.celcoinevents.providers.aws.sns.topics.CelcoinEventsTopic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,7 +17,6 @@ public class SendEventToTheLake {
     public void execute(String event){
         SendMessageToSnsTopic sendMessageToSnsTopic = new SendMessageToSnsTopic(lambaCommand());
         sendMessageToSnsTopic.execute(event);
-
     }
 
     private Command<String> lambaCommand () {
