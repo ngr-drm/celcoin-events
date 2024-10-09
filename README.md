@@ -6,12 +6,7 @@ Technical studies and experiments
 
 <h4>Further information</h4>
 
-_A proof of concept aimed at validating a banking events ingestion service into an AWS cloud data lake._
+_A proof of concept designed to validate a service for ingesting banking events into an anti-fraud data lake on the AWS cloud platform._
 
-Main Technologies: **Spring Boot AWS (SNS SQS Lambda S3)**
+Main Technologies: **Spring Boot SNS SQS Lambda S3**
 
-Flow Details:
- - Events are published to an SNS topic
- - An SQS queue subscribes to the SNS topic and receives the published events
- - The SQS queue triggers a Lambda function upon receiving events
- - The Lambda function processes the events and stores them in S3 bucket
