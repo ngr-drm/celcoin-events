@@ -1,7 +1,6 @@
-package com.api.celcoinevents.domain.rest.pix.activities;
+package com.api.celcoinevents.domain.rest.pix.antifraud.key.query.activities;
 
-import com.api.celcoinevents.domain.rest.pix.activities.SendEventToTheLake;
-import com.api.celcoinevents.domain.rest.pix.handlers.EnterpriseException;
+import com.api.celcoinevents.domain.rest.pix.antifraud.key.query.handlers.EnterpriseException;
 import com.api.celcoinevents.providers.aws.sns.topics.CelcoinEventsTopic;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

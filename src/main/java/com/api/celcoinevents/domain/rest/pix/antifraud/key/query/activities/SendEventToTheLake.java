@@ -1,8 +1,8 @@
-package com.api.celcoinevents.domain.rest.pix.activities;
+package com.api.celcoinevents.domain.rest.pix.antifraud.key.query.activities;
 
 import com.api.celcoinevents.commands.Command;
 import com.api.celcoinevents.commands.SendMessageToSnsTopic;
-import com.api.celcoinevents.domain.rest.pix.handlers.EnterpriseException;
+import com.api.celcoinevents.domain.rest.pix.antifraud.key.query.handlers.EnterpriseException;
 import com.api.celcoinevents.providers.aws.sns.topics.CelcoinEventsTopic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
