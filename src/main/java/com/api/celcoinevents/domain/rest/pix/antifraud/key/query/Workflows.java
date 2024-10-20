@@ -17,8 +17,8 @@ public class Workflows {
     private SendEventToTheLake sendEventToTheLake;
 
     @PostMapping
-    public ResponseEntity<Void> sendEventToTheLake(@RequestBody Event event) throws EnterpriseException {
-        sendEventToTheLake.execute(event.toString());
+    public ResponseEntity<Void> sendEventToTheLake(@RequestBody String event) throws EnterpriseException {
+        sendEventToTheLake.execute(event);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }
